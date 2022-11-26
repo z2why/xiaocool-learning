@@ -1,0 +1,9 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "cl-topbar": "/node-modules/cl-uni/components/cl-topbar/cl-topbar",
+    "cl-text": "/node-modules/cl-uni/components/cl-text/cl-text",
+    "cl-input": "/node-modules/cl-uni/components/cl-input/cl-input",
+    "result-pop": "/pages/my/components/result-pop/index"
+  }
+}

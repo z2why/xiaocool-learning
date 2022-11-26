@@ -1,0 +1,1 @@
+<slot name="loading"></slot><scoped-slots-loading status="{{status}}" text="{{text}}" move="{{move}}" class="scoped-ref" bind:__l="__l"></scoped-slots-loading>

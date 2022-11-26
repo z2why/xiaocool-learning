@@ -1,0 +1,290 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* COOL-UNI 颜色变量 */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page.data-v-810f65fc {
+  background: #f5f5f5;
+}
+.page-my.data-v-810f65fc {
+  padding-bottom: 50rpx;
+}
+.page-my .header.data-v-810f65fc {
+  position: relative;
+  height: 508rpx;
+}
+.page-my .header .bg.data-v-810f65fc {
+  width: 100%;
+  height: 100%;
+}
+.page-my .header .info.data-v-810f65fc {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 4%;
+  top: 203rpx;
+  padding: 0 32rpx;
+}
+.page-my .header .info .avatar.data-v-810f65fc {
+  width: 130rpx;
+  height: 130rpx;
+}
+.page-my .header .info .detail.data-v-810f65fc {
+  margin-left: 30rpx;
+}
+.page-my .header .info .detail .tag.data-v-810f65fc {
+  margin-top: 18rpx;
+  display: inline-block;
+  position: relative;
+  padding: 6rpx 18rpx;
+  color: #ffffff;
+  font-size: 28rpx;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 26rpx;
+}
+.page-my .middle-contain.data-v-810f65fc {
+  width: 94%;
+  /* height: 160px; */
+  margin-top: 10px;
+  margin-left: 3%;
+  background-color: #fff;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  padding: 14px 0px 0px 0px;
+}
+.page-my .text-day.data-v-810f65fc {
+  font-size: 18px;
+  color: #506bf8;
+  font-weight: bold;
+}
+.page-my .text-day.data-v-810f65fc::before {
+  content: '已连续签到';
+  font-size: 18px;
+  color: #393939;
+  font-weight: 500;
+  margin-right: 5px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.page-my .text-point.data-v-810f65fc {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #9db4ff;
+}
+.page-my .text-point.data-v-810f65fc::before {
+  content: '明日签到可获得';
+  font-size: 12px;
+  color: #acacac;
+  font-weight: 500;
+  margin-right: 5px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.page-my .view-week.data-v-810f65fc {
+  margin: 20px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.page-my .block-contain.data-v-810f65fc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.page-my .radio-circle.data-v-810f65fc {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-my .background1.data-v-810f65fc {
+  background: linear-gradient(to right, #3071ff, #7471fe);
+}
+.page-my .background2.data-v-810f65fc {
+  background: #b6b6b6;
+}
+.page-my .radio-circle-img.data-v-810f65fc {
+  width: 20px;
+  height: 20px;
+}
+.page-my .week-name.data-v-810f65fc {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #7f7f7f;
+}
+.page-my .SignIn.data-v-810f65fc {
+  position: relative;
+  padding: 40rpx 40rpx;
+  box-sizing: border-box;
+  margin: -120rpx auto 0 auto;
+  width: 690rpx;
+  background: #ffffff;
+  border-radius: 16rpx;
+}
+.page-my .SignIn .btn.data-v-810f65fc {
+  position: absolute;
+  right: 230rpx;
+  bottom: 80rpx;
+}
+.page-my .SignIn .btn .btn1.data-v-810f65fc {
+  position: relative;
+  top: 61rpx;
+  box-shadow: 2px 3px 8px 5px #9e9e9e45;
+  background: #F7B500;
+  color: #FFFFFF;
+  width: 160rpx;
+  height: 60rpx;
+  font-size: 26rpx;
+}
+.page-my .SignIn .btn .btn2.data-v-810f65fc {
+  position: relative;
+  top: 61rpx;
+  box-shadow: 2px 3px 8px 5px #9e9e9e45;
+  background: #999999;
+  color: #FFFFFF;
+  width: 160rpx;
+  height: 60rpx;
+  font-size: 26rpx;
+}
+.page-my .SignIn .btn .btn3.data-v-810f65fc {
+  position: relative;
+  left: 180rpx;
+  box-shadow: 2px 3px 8px 5px #9e9e9e45;
+  background: #506bf8;
+  color: #FFFFFF;
+  width: 160rpx;
+  height: 60rpx;
+  font-size: 26rpx;
+}
+.page-my .SignIn .point.data-v-810f65fc {
+  font-size: 30px;
+  color: #506bf8;
+  font-weight: bold;
+}
+.page-my .SignIn .stext.data-v-810f65fc {
+  color: #93928b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 30rpx;
+  border-bottom: 1px solid #f5f5f5;
+}
+.page-my .SignIn .stext .right.data-v-810f65fc {
+  display: flex;
+  padding: 4rpx 16rpx 4rpx 20rpx;
+  align-items: center;
+  background: #80a3ff;
+  font-size: 28rpx;
+  color: #ffffff;
+  border-radius: 25rpx;
+}
+.page-my .SignIn .msg.data-v-810f65fc {
+  display: flex;
+}
+.page-my .SignIn .msg .item.data-v-810f65fc {
+  margin-top: 50rpx;
+  flex: 1;
+  text-align: center;
+}
+.page-my .advice.data-v-810f65fc {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 24rpx;
+  width: 690rpx;
+  height: 180rpx;
+}
+.page-my .advice image.data-v-810f65fc {
+  width: 100%;
+  height: 100%;
+}
+.page-my .order.data-v-810f65fc {
+  margin: 0 auto;
+  margin-top: 24rpx;
+  padding: 40rpx 30rpx;
+  box-sizing: border-box;
+  width: 690rpx;
+  background: #ffffff;
+  border-radius: 16rpx;
+}
+.page-my .order .title.data-v-810f65fc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 30rpx;
+  border-bottom: 1px solid #f5f5f5;
+}
+.page-my .order .title .right.data-v-810f65fc {
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  color: #8d8d8d;
+}
+.page-my .order .type.data-v-810f65fc {
+  display: flex;
+  margin-top: 60rpx;
+  padding: 0 25rpx;
+}
+.page-my .order .type .item.data-v-810f65fc {
+  text-align: center;
+  margin-right: 80rpx;
+}
+.page-my .order .type .item image.data-v-810f65fc {
+  width: 54rpx;
+  height: 66rpx;
+}
+.page-my .other.data-v-810f65fc {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24rpx;
+  width: 690rpx;
+  background: #ffffff;
+  border-radius: 16rpx;
+}
+.page-my .other .item.data-v-810f65fc {
+  display: flex;
+  padding: 40rpx 30rpx 0 30rpx;
+  box-sizing: border-box;
+}
+.page-my .other .item .mask.data-v-810f65fc {
+  width: 44rpx;
+  height: 44rpx;
+}
+.page-my .other .item .content.data-v-810f65fc {
+  margin-left: 8rpx;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-bottom: 31rpx;
+  justify-content: space-between;
+  border-bottom: 1px solid #f5f5f5;
+}
+.page-my .other .item .active.data-v-810f65fc {
+  border-bottom: none;
+}
+

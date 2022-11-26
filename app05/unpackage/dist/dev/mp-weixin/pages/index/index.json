@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "主页",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "cl-topbar": "/node-modules/cl-uni/components/cl-topbar/cl-topbar",
+    "cl-swiper": "/node-modules/cl-uni/components/cl-swiper/cl-swiper",
+    "cl-tabs": "/node-modules/cl-uni/components/cl-tabs/cl-tabs",
+    "cl-image": "/node-modules/cl-uni/components/cl-image/cl-image",
+    "cl-text": "/node-modules/cl-uni/components/cl-text/cl-text"
+  }
+}

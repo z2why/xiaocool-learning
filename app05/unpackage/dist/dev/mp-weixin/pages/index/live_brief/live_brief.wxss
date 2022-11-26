@@ -1,0 +1,250 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* COOL-UNI 颜色变量 */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.LessonDetails-content {
+  background-color: #f5f3f8;
+}
+.LessonDetails-content .LessonDetails-top {
+  width: 100%;
+  height: 350rpx;
+  background-color: #e8e8e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.LessonDetails-content .LessonDetails-top uni-image {
+  width: 100%;
+}
+.LessonDetails-content .LessonDetails-top image {
+  width: 100%rpx;
+  height: 350rpx;
+}
+.LessonDetails-content .LessonDetails-dianzan {
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  width: 100%;
+  height: 150rpx;
+  background-color: #ffffff;
+  margin-top: 10rpx;
+  margin-bottom: 15rpx;
+}
+.LessonDetails-content .LessonDetails-dianzan .LessonDetails-name {
+  padding-top: 10rpx;
+  padding-bottom: 3rpx;
+}
+.LessonDetails-content .LessonDetails-dianzan .dianzan-shoucang-zhuanfa {
+  font-size: 30rpx;
+}
+.LessonDetails-content .LessonDetails-dianzan .dianzan-shoucang-zhuanfa image {
+  width: 50rpx;
+  height: 50rpx;
+  padding-right: 10rpx;
+}
+.LessonDetails-content .LessonDetails-dianzan .dianzan-shoucang-zhuanfa .shoucang {
+  padding-left: 40rpx;
+  padding-top: 20rpx;
+}
+.LessonDetails-content .LessonDetails-dianzan .dianzan-shoucang-zhuanfa .fenxiang {
+  padding-left: 350rpx;
+}
+.LessonDetails-content .LessonDetails-jianjie .LessonDetails-jianjie-top {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.LessonDetails-content .LessonDetails-jianjie .LessonDetails-jianjie-top .LessonDetails-jianjie-top-item {
+  width: 33vh;
+  height: 80rpx;
+  text-align: center;
+  padding-top: 10rpx;
+}
+.LessonDetails-content .LessonDetails-jianjie .LessonDetails-jianjie-top .LessonDetails-jianjie-top-item::before {
+  position: absolute;
+  content: '|';
+  top: 5rpx;
+  color: #eee;
+  right: 0;
+}
+.LessonDetails-content .LessonDetails-jianjie .LessonDetails-jianjie-top .LessonDetails-jianjie-top-item:last-child::before {
+  position: absolute;
+  content: '|';
+  top: 5rpx;
+  color: #fff;
+  right: 0;
+}
+.LessonDetails-content .LessonDetails-jianjie .LessonDetails-jianjie-top .addnav {
+  border-bottom: 4rpx solid #48c680;
+  color: #31b26a;
+}
+.LessonDetails-content .LessonDetails-jianjie .LessonDetails-jianjie-top .active {
+  color: #aace9e;
+  border-bottom: 4rpx solid #aace9e;
+}
+.LessonDetails-content .bigbox consult {
+  margin-bottom: 20rpx;
+}
+.LessonDetails-content .Course-introduction {
+  background-color: #ffffff;
+  margin-bottom: 10rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+.LessonDetails-content .Course-introduction .Course-introduction-name {
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  letter-spacing: 8rpx;
+}
+.LessonDetails-content .Course-introduction .Course-introduction-content {
+  padding-bottom: 30rpx;
+  line-height: 60rpx;
+  letter-spacing: 8rpx;
+}
+.LessonDetails-content .develop {
+  background-color: #ffffff;
+  margin-bottom: 10rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+.LessonDetails-content .develop .develop-name {
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.LessonDetails-content .develop .develop-content {
+  padding-bottom: 30rpx;
+}
+.LessonDetails-content .Course {
+  background-color: #ffffff;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+.LessonDetails-content .Course .Course-name {
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+.LessonDetails-content .Course .Course-content {
+  display: flex;
+  padding-bottom: 50rpx;
+}
+.LessonDetails-content .Course .Course-content .Course-content-left {
+  width: 300rpx;
+  height: 150rpx;
+  background-color: #e8e8e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.LessonDetails-content .Course .Course-content .Course-content-left image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.LessonDetails-content .Course .Course-content .Course-content-right {
+  padding-left: 10rpx;
+}
+.LessonDetails-content .Course .Course-content .Course-content-right .Course-content-right-name {
+  padding-bottom: 10rpx;
+}
+.LessonDetails-content .Course .Course-content .Course-content-right .Course-content-right-details {
+  font-size: 35rpx;
+  color: #acb2b2;
+}
+.bigbox {
+  height: 650rpx;
+  margin-bottom: 200rpx;
+}
+.bigbox ._ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.bigbox ._ul ._li {
+  padding: 20rpx 20rpx 20rpx 100rpx;
+  background-color: white;
+}
+.consult {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10rpx;
+  margin-bottom: 200rpx !important;
+}
+.consult .consult-content {
+  border-bottom: 1rpx solid #f0f0f0;
+  padding: 20rpx;
+  display: flex;
+  justify-content: flex-start;
+  background-color: white;
+}
+.consult .consult-content .imgView {
+  width: 100rpx;
+  height: 100rpx;
+  padding-right: 20rpx;
+}
+.consult .consult-content .imgView image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.consult .textView {
+  display: flex;
+  flex-direction: column;
+}
+.consult .textView text {
+  height: 50rpx;
+}
+.consult .textView .name {
+  color: #d58e00;
+}
+.consult .textView .text {
+  font-size: 22rpx;
+  color: #4f4f4f;
+}
+.uni-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.addComment {
+  width: 100rpx;
+  height: 100rpx;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 50rpx;
+  line-height: 100rpx;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+  position: fixed;
+  bottom: 100rpx;
+  right: 100rpx;
+  color: #ababab;
+}
+.addComment:hover {
+  box-shadow: 0 4px 8px rgba(0, 85, 255, 0.1), 0 0 12px rgba(0, 85, 255, 0.1);
+  color: #4a4a4a;
+}
+

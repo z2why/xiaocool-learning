@@ -1,0 +1,7 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "cl-topbar": "/node-modules/cl-uni/components/cl-topbar/cl-topbar",
+    "cl-text": "/node-modules/cl-uni/components/cl-text/cl-text"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "cl-dialog": "/node-modules/cl-uni/components/cl-dialog/cl-dialog",
+    "cl-text": "/node-modules/cl-uni/components/cl-text/cl-text"
+  },
+  "component": true
+}

@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/index/category",
+    "pages/index/discover",
+    "pages/index/my",
+    "pages/my/take",
+    "pages/my/order",
+    "pages/my/member",
+    "pages/discover/infomationS",
+    "pages/my/news",
+    "pages/discover/poseQuestion",
+    "pages/discover/questionS",
+    "pages/discover/pose",
+    "pages/index/recovery/recovery",
+    "pages/index/live_brief/live_brief",
+    "pages/index/live_brief/addCouComment",
+    "pages/my/Sorder",
+    "pages/my/xiaoxi",
+    "pages/my/shoucang",
+    "pages/my/ssuccess",
+    "pages/learn/qiandao"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uPage",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#ACACAC",
+    "selectedColor": "#5E8AFF",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/icon/tabbar/index.png",
+        "selectedIconPath": "static/icon/tabbar/index-in.png",
+        "text": "选课"
+      },
+      {
+        "pagePath": "pages/index/category",
+        "iconPath": "static/icon/tabbar/category.png",
+        "selectedIconPath": "static/icon/tabbar/category-in.png",
+        "text": "学习"
+      },
+      {
+        "pagePath": "pages/index/discover",
+        "iconPath": "static/icon/tabbar/find.png",
+        "selectedIconPath": "static/icon/tabbar/find-in.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/index/my",
+        "iconPath": "static/icon/tabbar/my.png",
+        "selectedIconPath": "static/icon/tabbar/my-in.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "page": "/components/page"
+  }
+}

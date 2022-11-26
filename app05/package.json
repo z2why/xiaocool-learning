@@ -1,0 +1,10 @@
+{
+    "id": "ss-calendar",
+    "name": "签到",
+    "version": "1.2.0",
+    "description": "简单的签到组件",
+    "keywords": [
+        "签到",
+        "日历"
+    ]
+}
