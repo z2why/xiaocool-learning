@@ -1,6 +1,0 @@
-{
-  "usingComponents": {
-    "cl-dialog": "/node-modules/cl-uni/components/cl-dialog/cl-dialog"
-  },
-  "component": true
-}

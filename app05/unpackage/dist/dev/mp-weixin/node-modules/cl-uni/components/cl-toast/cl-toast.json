@@ -1,6 +1,0 @@
-{
-  "usingComponents": {
-    "cl-icon": "/node-modules/cl-uni/components/cl-icon/cl-icon"
-  },
-  "component": true
-}

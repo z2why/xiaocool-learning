@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "消息",
-  "enablePullDownRefresh": false,
-  "usingComponents": {
-    "cl-tabs": "/node-modules/cl-uni/components/cl-tabs/cl-tabs",
-    "cl-tab-pane": "/node-modules/cl-uni/components/cl-tab-pane/cl-tab-pane"
-  }
-}

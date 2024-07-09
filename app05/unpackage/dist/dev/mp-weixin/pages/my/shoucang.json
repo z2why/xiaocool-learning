@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "收藏",
-  "enablePullDownRefresh": false,
-  "usingComponents": {
-    "cl-icon": "/node-modules/cl-uni/components/cl-icon/cl-icon"
-  }
-}

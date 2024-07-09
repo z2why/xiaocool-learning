@@ -1,9 +1,0 @@
-{
-  "usingComponents": {
-    "cl-toast": "/node-modules/cl-uni/components/cl-toast/cl-toast",
-    "cl-message": "/node-modules/cl-uni/components/cl-message/cl-message",
-    "cl-loading-mask": "/node-modules/cl-uni/components/cl-loading-mask/cl-loading-mask",
-    "cl-confirm": "/node-modules/cl-uni/components/cl-confirm/cl-confirm"
-  },
-  "component": true
-}

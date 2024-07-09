@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "发现",
-  "navigationBarBackgroundColor": "#ffffff",
-  "usingComponents": {
-    "u-parse": "/components/u-parse/u-parse"
-  }
-}
