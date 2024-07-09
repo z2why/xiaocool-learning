@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "学习",
+  "navigationBarBackgroundColor": "#ffffff",
+  "usingComponents": {
+    "cl-text": "/node-modules/cl-uni/components/cl-text/cl-text",
+    "cl-icon": "/node-modules/cl-uni/components/cl-icon/cl-icon"
+  }
+}

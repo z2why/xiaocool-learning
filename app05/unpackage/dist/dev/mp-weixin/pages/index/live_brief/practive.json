@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "线下实践",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "cl-list-item": "/node-modules/cl-uni/components/cl-list-item/cl-list-item",
+    "cl-button": "/node-modules/cl-uni/components/cl-button/cl-button"
+  }
+}

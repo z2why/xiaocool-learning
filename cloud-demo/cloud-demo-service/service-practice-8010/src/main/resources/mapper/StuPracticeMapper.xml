@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.practice.mapper.PracticeMapper">
+
+
+    <select id="PracticePage" resultType="entity.stuPractice">
+        SELECT p.pra_id,c.cou_id,c.cou_name,p.pra_name,p.pra_time,u.truename,p.pra_site,p.deleted,p.tea_id,p.pra_main,p.pra_id
+          from practice p
+                  LEFT JOIN course c
+                            ON p.cou_id=c.cou_id
+                  LEFT JOIN user u
+                            ON p.tea_id=u.tea_id
+
+            ${ew.customSqlSegment}
+    </select>
+
+
+
+
+
+    <select id="selectPracticePage" resultType="entity.stuPractice">
+        SELECT sp.id,p.pra_id,c.cou_id,c.cou_name,s.stu_id,s.stu_name,sp.pra_date,p.pra_name,p.pra_time,u.truename,p.pra_site,p.deleted,p.tea_id,p.pra_main,sp.audit
+        FROM  stu_practice sp
+                 LEFT JOIN student s
+                      ON sp.stu_id=s.stu_id
+                            LEFT JOIN practice p
+                                 ON sp.pra_id=p.pra_id
+                                      LEFT JOIN course c
+                                                ON p.cou_id=c.cou_id
+                                                        LEFT JOIN user u
+                                                                  ON p.tea_id=u.tea_id
+
+                                                        ${ew.customSqlSegment}
+    </select>
+</mapper>

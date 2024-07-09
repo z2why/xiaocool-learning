@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/lemon?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8
+    username: root
+    password: Yys12300
+
+mybatis-plus:
+    mapper-locations: classpath:mapper/**/*Mapper.xml
+    global-config:
+      db-config:
+        #主键类型  0:"数据库ID自增",1:"该类型为未设置主键类型", 2:"用户输入ID",3:"全局唯一ID (数字类型唯一ID)", 4:"全局唯一ID UUID";
+        id-type: assign_id
+        # 默认数据库表下划线命名
+        table-underline: true
+    configuration:
+      # 返回类型为Map,显示null对应的字段
+      call-setters-on-nulls: true
+      # 这个配置会将执行的sql打印出来，在开发或测试的时候可以用
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

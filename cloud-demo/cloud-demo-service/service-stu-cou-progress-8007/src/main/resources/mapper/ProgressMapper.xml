@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.progress.mapper.ProgressMapper">
+
+    <select id="findProgress" resultType="entity.StuProgressDTO">
+        SELECT  c.*,scp.last_cha_id,scp.stu_id,scp.learned_status,scp.learned_section_count,scp.time,scp.create_time,scp.update_time,u.truename
+        FROM stu_cou_progress scp
+                 LEFT JOIN course c
+                           ON c.cou_id=scp.cou_id
+                 LEFT JOIN user u
+                           ON c.tea_id=u.tea_id
+
+            ${ew.customSqlSegment}
+    </select>
+
+    <select id="findClassProgress" resultType="entity.StuProgressDTO">
+        SELECT  c.*,scp.last_cha_id,scp.stu_id,scp.learned_status,scp.learned_section_count,scp.time,scp.create_time,scp.update_time,u.truename,sc.class_id
+        FROM stu_cou_progress scp
+                 LEFT JOIN course c
+                           ON c.cou_id=scp.cou_id
+                 LEFT JOIN user u
+                           ON c.tea_id=u.tea_id
+                 LEFT JOIN stu_class sc
+                           ON sc.stu_id=scp.stu_id
+                 LEFT JOIN cou_class cc
+                           ON sc.class_id=cc.class_id and c.cou_id=cc.cou_id
+            ${ew.customSqlSegment}
+    </select>
+
+</mapper>

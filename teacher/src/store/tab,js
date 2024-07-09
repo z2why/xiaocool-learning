@@ -1,0 +1,67 @@
+//管理菜单数据
+export default {
+    state: {
+        isCollapse: false, //控制菜单的展开还是收起
+        //面包屑数据
+        tabsList: [
+            {
+                path: "/classes",
+                name: "classes",
+                label: "班级管理",
+                icon: "s-home",
+              }
+        ],
+        
+        
+    },
+    mutations: {
+        //修改菜单展开收起的方法
+        collapseMenu(state){
+            state.isCollapse = !state.isCollapse;
+        },
+       
+        selectMenu(state){
+            const menu = JSON.parse(sessionStorage.getItem('menu'))
+            //console.log(menu,'menu')
+            //判断数据是否为首页
+            if(menu.name !== 'classes'){
+                // console.log(val,'val')
+                const index =  state.tabsList.findIndex(item => item.name === menu.name);
+            //如果不存在首页
+                if(index === -1){
+                    state.tabsList.push(menu)
+                    //console.log(state.tabsList,'state')
+                }
+            } 
+        },
+        
+        //#region 
+         //更新面包屑数据，
+        //selectMenu(state, val ) {//val是传进来的数据
+        //    //判断数据是否为首页
+        //     if(val.name !== 'classes'){
+        //         // console.log(val,'val')
+        //         const index =  state.tabsList.findIndex(item => item.name === val.name);
+        //        //如果不存在首页
+        //         if(index === -1){
+        //             state.tabsList.push(val)
+        //             // console.log(state.tabsList,'state')
+        //         }
+        //     }           
+        //},
+        //#endregion
+
+        //删除指定的tag数据
+        closeTag(state, item ){
+            const index = state.tabsList.findIndex(val => val.name === item.name)
+            state.tabsList.splice(index,1);//根据index删除tabsList 
+                  
+            // console.log(state.tabsList,state.tabsList.length,index)
+            if(index === state.tabsList.length){ //tag删除的是最后一项,将删除的前一项存储在sessionStorage
+                sessionStorage.setItem("menu",JSON.stringify(state.tabsList[index-1]))
+            }else{//tag删除的是不是当前项,将当前项存储在sessionStorage
+                sessionStorage.setItem("menu",JSON.stringify(state.tabsList[index]))
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.order.mapper.OrderMapper">
+
+
+
+    <select id="selectOrderDetail" resultType="entity.orderDetailDTO">
+        SELECT  c.cou_id,c.cou_name,c.cou_introduction,c.cou_type,c.cou_chile_type,c.cou_price,c.cou_cha_num,c.tea_id,c.cou_coll_num,c.cou_reco_num,c.deleted
+             ,o.orderForm_date,o.id as order_id,o.orderForm_p,o.orderForm_detail,u.username,o.u_id,u.stu_id,c.cover
+        FROM order_detail od
+                 LEFT JOIN course c
+                           ON od.cou_id=c.cou_id
+                 LEFT JOIN order_form o
+                           ON o.id=od.order_id
+                 LEFT JOIN user u
+                           ON u.id=o.u_id
+            ${ew.customSqlSegment}
+    </select>
+
+</mapper>

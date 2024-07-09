@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "我的实践",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "cl-tag": "/node-modules/cl-uni/components/cl-tag/cl-tag"
+  }
+}

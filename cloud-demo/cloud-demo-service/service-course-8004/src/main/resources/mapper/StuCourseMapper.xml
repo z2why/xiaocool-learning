@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.course.mapper.CourseMapper">
+
+  <select id="selectstuCoursePage" resultType="entity.stuCou">
+      SELECT  c.cou_id,c.cou_name,c.cou_introduction,c.cou_type,c.cou_chile_type,c.cou_price,c.tea_id,c.cou_coll_num,c.cou_reco_num,c.deleted
+           ,s.stu_name,s.stu_study_time,s.stu_score,s.stu_id,sc.select_time,sc.id,c.cover,c.cou_cha_num,u.truename,ci.collect,ci.recommend,ci.have
+      FROM stu_cou sc
+               LEFT JOIN student s
+                         ON sc.stu_id=s.stu_id
+               LEFT JOIN course c
+                         ON sc.cou_id=c.cou_id
+               LEFT JOIN user u
+                         ON u.tea_id=c.tea_id
+               LEFT JOIN course_interaction ci
+                         ON ci.cou_id=c.cou_id AND ci.stu_id=s.stu_id
+                               ${ew.customSqlSegment}
+  </select>
+
+    <select id="selectCoursePage" resultType="entity.stuCou">
+        SELECT  c.cou_id,c.cou_name,c.cou_introduction,c.cou_type,c.cou_chile_type,c.cou_price,c.tea_id,c.cou_coll_num,c.cou_reco_num,c.deleted
+             ,s.stu_name,s.stu_study_time,s.stu_score,s.stu_id,c.cover,u.truename,ci.collect,ci.recommend,ci.have,ci.update_time
+        FROM course_interaction ci
+                 LEFT JOIN student s
+                           ON ci.stu_id=s.stu_id
+                 LEFT JOIN course c
+                           ON ci.cou_id=c.cou_id
+                 LEFT JOIN user u
+                           ON u.tea_id=c.tea_id
+
+            ${ew.customSqlSegment}
+    </select>
+
+    <select id="findStuCouApp" resultType="entity.StuCouAppDTO">
+        SELECT ca.*,u.truename,u.avatar
+        FROM course_appraise ca
+                 LEFT JOIN user u
+                           ON u.stu_id=ca.stu_id
+            ${ew.customSqlSegment}
+    </select>
+
+</mapper>

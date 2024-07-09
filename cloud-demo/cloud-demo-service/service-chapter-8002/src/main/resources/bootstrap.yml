@@ -1,0 +1,11 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: service-chapter
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      discovery:
+        ephemeral: false

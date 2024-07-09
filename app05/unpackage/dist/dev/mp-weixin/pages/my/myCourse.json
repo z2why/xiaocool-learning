@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "我的课程",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "cl-search": "/node-modules/cl-uni/components/cl-search/cl-search"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "登录",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "cl-input": "/node-modules/cl-uni/components/cl-input/cl-input",
+    "cl-button": "/node-modules/cl-uni/components/cl-button/cl-button",
+    "cl-toast": "/node-modules/cl-uni/components/cl-toast/cl-toast",
+    "cl-message": "/node-modules/cl-uni/components/cl-message/cl-message"
+  }
+}

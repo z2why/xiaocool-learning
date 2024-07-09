@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "课程",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "cl-input": "/node-modules/cl-uni/components/cl-input/cl-input"
+  }
+}

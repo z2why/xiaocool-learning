@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "课程评价",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "cl-button": "/node-modules/cl-uni/components/cl-button/cl-button"
+  }
+}

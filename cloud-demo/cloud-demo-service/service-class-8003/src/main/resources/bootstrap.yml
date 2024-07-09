@@ -1,0 +1,11 @@
+server:
+  port: 8003
+
+spring:
+  application:
+    name: service-class
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      discovery:
+        ephemeral: false

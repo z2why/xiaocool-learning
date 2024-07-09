@@ -1,0 +1,286 @@
+{
+	"pages": [
+
+
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"enablePullDownRefresh": false
+
+			}
+
+		},
+
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "主页",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		{
+			"path": "pages/index/category",
+			"style": {
+				"navigationBarTitleText": "学习",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+		},
+		{
+			"path": "pages/index/discover",
+			"style": {
+				"navigationBarTitleText": "发现",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+		},
+		{
+			"path": "pages/index/my",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		//课程分类页面
+		{
+			"path": "pages/index/course",
+			"style": {
+				"navigationBarTitleText": "课程",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		{
+			"path": "pages/my/order",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/my/returnGoods",
+			"style": {
+				"navigationBarTitleText": "退货",
+				"enablePullDownRefresh": false
+			}
+		},
+	
+		{
+			"path": "pages/discover/infomationS",
+			"style": {
+				"navigationBarTitleText": "资讯",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/my/news",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/discover/poseQuestion",
+			"style": {
+				"navigationBarTitleText": "发布问题",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/discover/questionS",
+			"style": {
+				"navigationBarTitleText": "问答",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/discover/pose",
+			"style": {
+				"navigationBarTitleText": "提问",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/index/recovery/recovery",
+			"style": {
+				"navigationBarTitleText": "数据结构",
+				"enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#6495ED"
+			}
+
+		}, {
+			"path": "pages/index/live_brief/live_brief",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		//新增课程评价
+		{
+			"path": "pages/index/live_brief/addCouComment",
+			"style": {
+				"navigationBarTitleText": "课程评价",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		//章节页面
+		{
+			"path": "pages/index/live_brief/chapter",
+			"style": {
+				"navigationBarTitleText": "章节",
+				"enablePullDownRefresh": false
+			}
+			
+
+		},
+		
+		{
+			"path": "pages/index/live_brief/addCouChaComment",
+			"style": {
+				"navigationBarTitleText": "章节评价",
+				"enablePullDownRefresh": false
+			}
+		
+		},
+		//课程的所有线下实践
+		{
+			"path": "pages/index/live_brief/allpractive",
+			"style": {
+				"navigationBarTitleText": "实践",
+				"enablePullDownRefresh": false
+		
+			}
+		},
+		//报名线下实践
+		{
+			"path": "pages/index/live_brief/practive",
+			"style": {
+				"navigationBarTitleText": "线下实践",
+				"enablePullDownRefresh": false
+
+			}
+		},
+		//我的实践
+		{
+			"path": "pages/my/myPractive",
+			"style": {
+				"navigationBarTitleText": "我的实践",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/my/Sorder",
+			"style": {
+				"navigationBarTitleText": "购物车",
+				"enablePullDownRefresh": false,
+				"app-plus":{//app端特有属性
+						"titleNView":{
+							"buttons":[{//右侧操作按钮样式定义,是以数组形式定义，可定义多个
+								"fontSize":"24rpx",
+								"text":"编辑"
+							}]
+						}
+                  	}
+			}
+
+		},
+		{
+			"path": "pages/my/myCourse",
+			"style": {
+				"navigationBarTitleText": "我的课程",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		//我的收藏
+		{
+			"path": "pages/my/shoucang",
+			"style": {
+				"navigationBarTitleText": "我的收藏",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"titleNView": {	
+						"buttons": [{
+							"text": "删除",
+							"fontSize": "28rpx",
+							"width":"80rpx"
+							
+
+						}]
+					}
+				}
+			}
+
+		},
+		// 购买课程
+		{
+			"path": "pages/my/ssuccess",
+			"style": {
+				"navigationBarTitleText": "购买成功",
+				"enablePullDownRefresh": false
+			}
+
+		}
+ 
+	
+
+	    ,{
+            "path" : "sqwq/sqwq",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uPage",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#ACACAC",
+		"selectedColor": "#000000",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/icon/tabbar/index.png",
+				"selectedIconPath": "static/icon/tabbar/index-in.png",
+				"text": "选课"
+			},
+			{
+				"pagePath": "pages/index/category",
+				"iconPath": "static/icon/tabbar/category.png",
+				"selectedIconPath": "static/icon/tabbar/category-in.png",
+				"text": "学习"
+			},
+			{
+				"pagePath": "pages/index/discover",
+				"iconPath": "static/icon/tabbar/find.png",
+				"selectedIconPath": "static/icon/tabbar/find-in.png",
+				"text": "发现"
+			},
+
+			{
+				"pagePath": "pages/index/my",
+				"iconPath": "static/icon/tabbar/my.png",
+				"selectedIconPath": "static/icon/tabbar/my-in.png",
+				"text": "我的"
+			}
+		]
+	},
+
+	// 发现页面 
+
+
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"cl-(.*)": "cl-uni/components/cl-$1/cl-$1.vue"
+		}
+	}
+}

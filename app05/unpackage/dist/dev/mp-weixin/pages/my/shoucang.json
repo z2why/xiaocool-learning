@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "我的收藏",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "cl-button": "/node-modules/cl-uni/components/cl-button/cl-button",
+    "cl-icon": "/node-modules/cl-uni/components/cl-icon/cl-icon"
+  }
+}

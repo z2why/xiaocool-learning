@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.classes.mapper.ClassMapper">
+
+  <select id="selectclassCoursePage" resultType="entity.couClass">
+      SELECT  c.cou_id,c.cou_name,c.cou_introduction,c.cou_type,c.cou_chile_type,c.cou_price,c.cou_cha_num,c.tea_id,c.cou_coll_num,c.cou_reco_num,c.deleted
+           ,s.class_name,s.class_student_num,cc.join_date,cc.id,u.truename as tea_name,cc.class_id,c.cover
+      FROM cou_class cc
+               LEFT JOIN class s
+                         ON cc.class_id=s.class_id
+               LEFT JOIN course c
+                         ON cc.cou_id=c.cou_id
+               LEFT JOIN user u
+                         ON u.tea_id=c.tea_id
+                ${ew.customSqlSegment}
+  </select>
+
+
+    <select id="selectCoursePage" resultType="entity.couClass">
+        SELECT  c.cou_id,c.cou_name,c.cou_introduction,c.cou_type,c.cou_chile_type,c.cou_price,c.cou_cha_num,c.tea_id,c.cou_coll_num,c.cou_reco_num,c.deleted
+             ,u.truename as tea_name,c.cover
+                  FROM course c
+                           LEFT JOIN user u
+                                     ON u.tea_id=c.tea_id
+            ${ew.customSqlSegment}
+    </select>
+
+</mapper>
