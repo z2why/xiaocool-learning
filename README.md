@@ -15,7 +15,7 @@
 前端：vue+element、uniapp+cool-uni
 
 后端：springcloud-alibaba、Redis、sentinel、nacos、open-feign
-
+![顶层数据流图](README%E5%9B%BE%E7%89%87%E5%A4%B9/wps1.jpg)
 ![img](file:///C:\Users\86134\AppData\Local\Temp\ksohtml1760\wps1.jpg) 
 
 ### 开发环境
@@ -26,14 +26,7 @@
 
 #### 开发环境
 
-Mysql8.0、jdk1.8
-
-vue3.0、Redis
-
-Sentinel\1.8.1: Sentinel 是面向分布式、多语言异构化服务架构的流量治理组件，主要以流量为切入点，从流量路由、流量控制、流量整形、熔断降级、系统自适应过载保护、热点流量防护等多个维度来帮助开发者保障微服务的稳定性。
-
-Nacos
-
+Mysql8.0、jdk1.8、vue3.0、Redis、Sentinel 1.8.1、Nacos
 
 
 ### **系统分析**
@@ -111,7 +104,6 @@ Nacos
 ###  数据流图
 
 顶层数据流图：
-![顶层数据流图](README%E5%9B%BE%E7%89%87%E5%A4%B9/wps1.jpg)
 ![img](file:///C:\Users\86134\AppData\Local\Temp\ksohtml1760\wps3.jpg) 
 
 加工完后的0层数据流图：
