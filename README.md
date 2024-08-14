@@ -15,12 +15,8 @@
 前端：vue+element、uniapp+cool-uni
 
 后端：springcloud-alibaba、Redis、sentinel、nacos、open-feign
-<<<<<<< HEAD
+
 ![img](README%E5%9B%BE%E7%89%87%E5%A4%B9/wps1.jpg) 
-=======
-![顶层数据流图](README%E5%9B%BE%E7%89%87%E5%A4%B9/wps1.jpg)
-![img](file:///C:\Users\86134\AppData\Local\Temp\ksohtml1760\wps1.jpg) 
->>>>>>> 98bbeb81dc8d8f715c9a7dd7e510c77e6d29634d
 
 ### 开发环境
 
@@ -108,11 +104,8 @@ Mysql8.0、jdk1.8、vue3.0、Redis、Sentinel 1.8.1、Nacos
 ###  数据流图
 
 顶层数据流图：
-<<<<<<< HEAD
 ![img](README%E5%9B%BE%E7%89%87%E5%A4%B9/wps3.jpg) 
-=======
-![img](file:///C:\Users\86134\AppData\Local\Temp\ksohtml1760\wps3.jpg) 
->>>>>>> 98bbeb81dc8d8f715c9a7dd7e510c77e6d29634d
+
 
 加工完后的0层数据流图：
 
